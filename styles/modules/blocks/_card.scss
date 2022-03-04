@@ -1,0 +1,90 @@
+@use "sass:map";
+.card{
+    @include flex (column);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $cardColor;
+
+    &:hover {
+        background-color: $cardColorHover;
+        cursor: pointer;
+    }
+
+    &_size_large {
+        border-radius: 16px;
+        padding: 40px;
+        @include phones {
+            padding: 20px;
+        }
+    }
+    
+    &_size_small {
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    &__span {
+        color: $fontParagraph;
+        @include font(400,18px,1);
+        margin-bottom: 20px;
+        @include phones {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__header {
+        color: $fontHeader;
+        margin: 0;
+        &_size_large {
+            @include font(400,32px,1);
+            margin-bottom: 40px;
+            @include tablet {
+                font-size: max(24px, 4.16vw);
+            }
+            @include phones {
+                @include font(400,24px,1.3);
+                margin-bottom: 28px;
+            }
+        }
+        &_size_small {
+            @include font(400,18px,1);
+            margin-bottom: 38px;
+            @include phones {
+                margin-bottom: 36px;
+            }
+        }
+    }
+
+    &__paragraph {
+        color: $fontParagraph;
+        margin: 0;
+        &_size_large {
+            @include font(400,32px,1.25);
+            margin-bottom: 40px;
+            @include tablet {
+                font-size: max(12px, 4.16vw);
+            }
+            @include phones {
+                @include font(400,12px,1.5);
+                margin-bottom: 100px;
+            }
+        }
+        &_size_small {
+            @include font(400,15px,1.27);
+            @include phones {
+                @include font(400,12px,1.5);
+            }
+        }
+    }   
+
+    &__price-tag {
+        color: $fontPriceTag;
+        margin: 0;
+        @include font(400,14px,1);
+            @include phones {
+                @include font(400,12px,1.5);
+        }
+    } 
+}

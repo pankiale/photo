@@ -1,0 +1,15 @@
+@use "sass:map";
+
+.button {
+    @include flex(column, center, center);
+    width: 240px;
+    background-color: map.get($colors,"Dark","buttonB");
+    border-radius: 8px;
+    cursor: pointer;
+    @include phones {
+        align-self: center;
+    }
+    &_footer{
+        width: 470px;
+    }
+}

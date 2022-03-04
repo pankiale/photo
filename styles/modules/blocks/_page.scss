@@ -1,0 +1,12 @@
+@use "sass:map";
+
+.page {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    max-width: 1440px;
+    min-width: 320px;
+    background-color: $pageColor;
+    color: $fontHeader;
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
