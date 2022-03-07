@@ -3,14 +3,14 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('./modules/vendor/font/roboto.woff2') format('woff2'), 
-       url('./modules/vendor/font/roboto.woff') format('woff'); 
+  src: url('roboto.woff2') format('woff2'), 
+       url('roboto.woff') format('woff'); 
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('./modules/vendor/font/robotomedium.woff2') format('woff2'), 
-       url('./modules/vendor/font/robotomedium.woff') format('woff'); 
+  src: url('robotomedium.woff2') format('woff2'), 
+       url('robotomedium.woff') format('woff'); 
 }
