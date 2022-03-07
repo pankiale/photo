@@ -7,9 +7,9 @@
         padding: 60px;
     }
     @include tablet {
-        padding: 32px;
+        padding-bottom: 32px;
     }
     @include phones {
-        padding: 24px 20px 20px 20px;
+        padding: 24px 20px 20px;
     }
 }

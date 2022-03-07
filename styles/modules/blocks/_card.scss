@@ -41,15 +41,15 @@
             @include font(400,32px,1);
             margin-bottom: 40px;
             @include tablet {
-                font-size: max(24px, 4.16vw);
+                font-size: max(24px, 4.166666vw);
             }
             @include phones {
-                @include font(400,24px,1.3);
+                @include font(400,24px,1.333333);
                 margin-bottom: 28px;
             }
         }
         &_size_small {
-            @include font(400,18px,1);
+            @include font(500,18px,1);
             margin-bottom: 38px;
             @include phones {
                 margin-bottom: 36px;
@@ -64,7 +64,7 @@
             @include font(400,32px,1.25);
             margin-bottom: 40px;
             @include tablet {
-                font-size: max(12px, 4.16vw);
+                font-size: max(12px, 4.166666vw);
             }
             @include phones {
                 @include font(400,12px,1.5);

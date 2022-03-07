@@ -12,4 +12,14 @@
     @include phones {
         padding: 40px 20px 30px;
     }
+    &__title {
+        margin: 0;
+        @include font (400, 32px, 1.25);
+        @include tablet {
+            @include font (400, 20px, 1.5);
+        }
+        @include phones {
+            font-size: 12px;
+        }
+    }
 }

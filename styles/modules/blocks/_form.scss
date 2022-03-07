@@ -13,6 +13,7 @@
         @include font(400,14px,1.71);
         letter-spacing: 0.375px;
         cursor: pointer;
+        box-sizing: border-box;
         padding: 0 0 0 16px;
         margin: 0;
         @include tablet {
@@ -35,13 +36,16 @@
         border: none;
         border-radius: 0px 8px 8px 0px;
         color: $fontHeader;
-        @include font(400,14px,1.71);
+        @include font(400,14px,1.714285714);
         letter-spacing: 0.375px;
         cursor: pointer;
         text-align: start;
         padding: 13px 16px;
         margin: 0;
         position: relative;
+        &:hover {
+             opacity: .5;
+        }
         @include phones {
             font-size: 0;
             width: 50px;
@@ -64,24 +68,5 @@
                      }
                 }
         }
-
-        
-
-       // &::after {
-       //     content: '';
-       //     position: absolute;
-       //     width: 11px;
-       //     height: 22px;
-       //     margin: 0;
-       //     background-image: url('./modules/images/v.svg');
-       //     background-repeat: no-repeat;
-       //     background-position: center;
-       //     bottom: 14px;
-       //     right: 16px;
-       //     @include phones {
-       //         padding: 0;
-       //         right: 19.5px;
-       //     }
-       // }
     }
 }

@@ -22,12 +22,19 @@
         letter-spacing: 0.375px;
         background-color: map.get($colors,"formSubmit","all");
         padding: 13px 30px;
-        margin: 0;
+        margin-top: 90px;
         @include flex(column, center, center);
         border-radius: 8px;
         cursor: pointer;
+        &:hover {
+            opacity: .5;
+       }
+       @include tablet {
+            margin-top: 80px;
+    }
         @include phones {
             @include font(400,12px,1.5);
+            margin-top: 50px;
         }
     }
     &__paragraph {
@@ -36,6 +43,7 @@
         margin: 50px 0 0;
         @include tablet {
             font-size: 20px;
+            line-height: 1.5;
             margin-top: 40px;
         }
         @include phones {
