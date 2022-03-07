@@ -710,61 +710,34 @@ template {
     padding: 20px;
   }
 }
-.main__grid-1 {
+.main__grid-up {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto;
   gap: 20px;
 }
+.main__grid-up::after {
+  content: "";
+  width: 100%;
+  min-width: 180px;
+  height: 100%;
+  min-height: 67px;
+  background-color: #FFD233;
+  border-radius: 10px;
+}
 @media screen and (max-width: 600px) {
-  .main__grid-1 {
+  .main__grid-up {
     grid-template-columns: 1fr;
   }
 }
-.main__grid-2 {
+.main__grid-down {
   display: grid;
   grid-template-columns: 1fr minmax(455px, 730px);
   grid-template-rows: auto;
   gap: 20px;
 }
-@media screen and (max-width: 1024px) {
-  .main__grid-2 {
-    grid-template-columns: 1fr minmax(280px, 455px);
-  }
-}
-@media screen and (max-width: 600px) {
-  .main__grid-2 {
-    grid-template-columns: 1fr;
-  }
-}
-.main__photo {
-  border-radius: 10px;
-}
-.main__photo_type_1 {
-  width: 448px;
-  min-height: 230px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-@media screen and (max-width: 1024px) {
-  .main__photo_type_1 {
-    width: 100%;
-    min-width: 280px;
-    height: 100%;
-    min-height: 142px;
-  }
-}
-.main__photo_type_2 {
-  width: 100%;
-  min-width: 180px;
-  height: 100%;
-  min-height: 67px;
-  margin: 0;
-  padding: 0;
-  background-color: #FFD233;
-}
-.main__photo_type_3 {
+.main__grid-down::before {
+  content: "";
   width: 100%;
   min-width: 173px;
   height: 100%;
@@ -772,8 +745,37 @@ template {
   margin: 0;
   padding: 0;
   background-color: #25E197;
+  border-radius: 10px;
 }
-.main__photo_type_4 {
+@media screen and (max-width: 1024px) {
+  .main__grid-down {
+    grid-template-columns: 1fr minmax(280px, 455px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__grid-down {
+    grid-template-columns: 1fr;
+  }
+}
+.main__photo {
+  border-radius: 10px;
+}
+.main__photo_type_a {
+  width: 448px;
+  min-height: 230px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .main__photo_type_a {
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+    min-height: 142px;
+  }
+}
+.main__photo_type_b {
   width: 100%;
   height: 100%;
   margin: 0;
